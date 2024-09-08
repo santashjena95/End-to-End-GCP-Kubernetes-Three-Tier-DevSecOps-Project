@@ -1,1 +1,2 @@
 # Three-Tier Web Application Deployment on AWS EKS using AWS EKS, ArgoCD, Prometheus, Grafana, and Jenkins
+principal://iam.googleapis.com/projects/909656124240/locations/global/workloadIdentityPools/inner-root-434608-t5.svc.id.goog/subject/ns/three-tier/sa/devops-sa

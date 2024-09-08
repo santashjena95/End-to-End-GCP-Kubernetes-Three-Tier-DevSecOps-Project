@@ -20,15 +20,14 @@ spec:
     metadata:
       labels:
         role: frontend
-    spec: 
-      imagePullSecrets:
-      - name: ecr-registry-secret
+    spec:
+      serviceAccount: devops-sa 
       containers:
       - name: frontend
-        image: 407622020962.dkr.ecr.us-east-1.amazonaws.com/frontendd9xmsuperhit-frontend:1
+        image: us-east4-docker.pkg.dev/inner-root-434608-t5/d9xmsuperhit-frontend/d9xmsuperhit-frontend:1
         imagePullPolicy: Always
         env:
           - name: REACT_APP_BACKEND_URL
-            value: "http://amanpathakdevops.study/api/tasks"
+            value: "http://:3500/api/tasks"
         ports:
         - containerPort: 3000

@@ -21,11 +21,10 @@ spec:
       labels:
         role: api
     spec:
-      imagePullSecrets:
-      - name: ecr-registry-secret
+      serviceAccount: devops-sa
       containers:
       - name: api
-        image: 407622020962.dkr.ecr.us-east-1.amazonaws.com/backendd9xmsuperhit-backendd9xmsuperhit-backendd9xmsuperhit-backend:20
+        image: us-east4-docker.pkg.dev/inner-root-434608-t5/d9xmsuperhit-backend/d9xmsuperhit-backend:20
         imagePullPolicy: Always
         env:
           - name: MONGO_CONN_STR
