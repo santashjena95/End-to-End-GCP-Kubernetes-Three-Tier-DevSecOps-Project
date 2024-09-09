@@ -12,3 +12,16 @@ helm install grafana grafana/grafana
 kubectl patch svc grafana -p '{"spec": {"type": "LoadBalancer"}}'
 
 kubectl get secret grafana -o jsonpath="{.data.admin-password}" | base64 --decode ; echo
+
+
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+
+helm install prometheus prometheus-community/prometheus
+
+helm repo update
+
+kubectl patch svc prometheus-server -p '{"spec": {"type": "LoadBalancer"}}'
+
+Grafana Dashboard Import:
+6417
+17375
