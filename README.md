@@ -23,3 +23,15 @@ helm repo update
 kubectl patch svc prometheus-server -p '{"spec": {"type": "LoadBalancer"}}'
 
 Grafana Dashboard Import: 6417, 17375
+
+===========================
+Important material for the project
+===========================
+GitHub Repo for Application Code and Jenkins Files 
+https://github.com/AmanPathak-DevOps/...
+
+GitHub Repo for Terraform files to create EKS Cluster
+https://github.com/AmanPathak-DevOps/...
+
+Complete Documentation for the Project
+https://blog.stackademic.com/advanced...
