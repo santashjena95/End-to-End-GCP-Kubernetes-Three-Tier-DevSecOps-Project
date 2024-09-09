@@ -33,12 +33,14 @@ Grafana Dashboard Import: 6417, 17375
 
 ## Important material for the project
 
+Youtube Video: https://www.youtube.com/watch?v=-AAcMNncCa4
+
 GitHub Repo for Application Code and Jenkins Files: https://github.com/AmanPathak-DevOps/End-to-End-Kubernetes-Three-Tier-DevSecOps-Project/tree/master
 
 GitHub Repo for Terraform files to create EKS Cluster: https://github.com/AmanPathak-DevOps/EKS-Terraform-GitHub-Actions
 
 Complete Documentation for the Project: https://blog.stackademic.com/advanced-end-to-end-devsecops-kubernetes-three-tier-project-using-aws-eks-argocd-prometheus-fbbfdb956d1a
 
-https://github.com/santashjena95/End-to-End-GCP-Kubernetes-Three-Tier-DevSecOps-Project/tree/master
+GCP GKE Manifest files with the application: https://github.com/santashjena95/End-to-End-GCP-Kubernetes-Three-Tier-DevSecOps-Project/tree/master
 
-https://github.com/santashjena95/GCP-GKE-Jenkins/tree/main
+GCP Terraform Code for creating GKE and Jenkins Server shell script: https://github.com/santashjena95/GCP-GKE-Jenkins/tree/main
