@@ -22,6 +22,4 @@ helm repo update
 
 kubectl patch svc prometheus-server -p '{"spec": {"type": "LoadBalancer"}}'
 
-Grafana Dashboard Import:
-6417
-17375
+Grafana Dashboard Import: 6417, 17375
