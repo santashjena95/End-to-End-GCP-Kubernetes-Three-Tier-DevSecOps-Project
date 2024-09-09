@@ -3,16 +3,11 @@ kind: Ingress
 metadata:
   name: mainlb
   namespace: three-tier
-  annotations:
-    alb.ingress.kubernetes.io/scheme: internet-facing
-    alb.ingress.kubernetes.io/target-type: ip
-    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]'
-    # alb.ingress.kubernetes.io/subnets: "subnet-0aa439b4ddafcca10,subnet-0b95df318219145ca,subnet-0ccca36474902829a"
+annotations:
+    cloud.google.com/neg: '{"ingress": true}'
 spec:
-  ingressClassName: alb
   rules:
-    - host: amanpathakdevops.study
-      http:
+    - http:
         paths:
           - path: /api
             pathType: Prefix
